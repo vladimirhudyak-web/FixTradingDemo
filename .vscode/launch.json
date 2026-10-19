@@ -1,0 +1,31 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Exchange",
+            "type": "coreclr",
+            "request": "launch",
+            "program": "${workspaceFolder}/Exchange/bin/Debug/net8.0/Exchange.dll",
+            "cwd": "${workspaceFolder}/Exchange/bin/Debug/net8.0",
+            "console": "integratedTerminal",
+            "stopAtEntry": false
+        },
+        {
+            "name": "TradeClient",
+            "type": "coreclr",
+            "request": "launch",
+            "program": "${workspaceFolder}/TradeClient/bin/Debug/net8.0/TradeClient.dll",
+            "cwd": "${workspaceFolder}/TradeClient/bin/Debug/net8.0",
+            "console": "integratedTerminal",
+            "stopAtEntry": false
+        }
+    ],
+    "compounds": [
+        {
+            "name": "Exchange + TradeClient",
+            "configurations": ["Exchange", "TradeClient"],
+            "preLaunchTask": "build",
+            "stopAll": true
+        }
+    ]
+}
