@@ -3,6 +3,7 @@ using QuickFix.Logger;
 using QuickFix.Store;
 using Exchange;
 
+//Test Vlad (Update for test in Git)
 Console.WriteLine("=== FIX demo EXCHANGE (acceptor) ===");
 
 var settings = new SessionSettings("exchange.cfg");
